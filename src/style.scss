@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo|Rubik:400,400i,700");
+
+$serif: "Arvo", serif;
+$sans: "Rubik", sans-serif;
+$white: #d4d4d2;
+$grey: #505050;
+$dark: #1c1c1c;
+$primary: #17a2b8;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $sans;
+}
+
+*::selection {
+  background-color: $grey;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  h1 {
+    margin-top: -3rem;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $dark;
+  color: $white;
+}
+
+#length-adjustment {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  width: 60%;
+}
+
+.adjustmentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  p {
+    font-size: 50px;
+  }
+}
+
+#break-container {
+  float: right;
+}
+
+#session-container {
+  float: left;
+}
+
+.timerButtons {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  fill: $primary;
+}
+
+#length-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 120px;
+  }
+}
